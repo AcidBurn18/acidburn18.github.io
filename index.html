@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevOps Engineer Portfolio showcasing side projects and blogs.">
+    <title>Your Name | DevOps Engineer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #f1c40f;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header p {
+            color: #bdc3c7;
+            font-size: 1.2em;
+            margin: 10px 0;
+            animation: fadeIn 2s ease-in-out 1s;
+        }
+        section {
+            padding: 50px 20px;
+        }
+        .project {
+            margin-bottom: 30px;
+            animation: slideIn 1s ease-out;
+        }
+        .project h2 {
+            font-size: 2em;
+            color: #f1c40f;
+        }
+        .project p {
+            color: #bdc3c7;
+            font-size: 1.2em;
+        }
+        .project a {
+            color: #f1c40f;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .project a:hover {
+            color: #e67e22;
+        }
+        footer {
+            background-color: #333;
+            color: #bdc3c7;
+            padding: 20px;
+            text-align: center;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>DevOps Engineer | Side Projects | Blog Writer</p>
+    </header>
+
+    <section id="projects">
+        <div class="project">
+            <h2>Home Server Setup</h2>
+            <p>Learn how I configured my own home server to host services like Jellyfin, NextCloud, and more with Docker and CI/CD using FluxCD and ArgoCD. <a href="https://github.com/your-repo/home-server-setup" target="_blank">View Project</a></p>
+        </div>
+        <div class="project">
+            <h2>Networking Setup with Pi-hole and Unbound</h2>
+            <p>How I optimized my home network with Pi-hole for ad-blocking and Unbound for DNS. <a href="https://github.com/your-repo/networking-setup" target="_blank">View Project</a></p>
+        </div>
+        <div class="project">
+            <h2>Blog: Teck Debate</h2>
+            <p>I write about DevOps practices, automation, and my experiences. Check out my latest posts on <a href="https://medium.com/@teckdebate" target="_blank">Medium</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll on clicking links
+        document.querySelectorAll('a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
